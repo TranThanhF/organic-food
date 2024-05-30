@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="logo-nav-div">
+        <div id="logo-div">
+            <img src="/image/logo2024.png" alt="" >
+            <form action="" id="search-box" >
+                <input type="text" id="search-text"
+                placeholder="Bạn muốn ăn gì?" required>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <script>
+            $(document).ready(function(){
+                  $('.icon-menu').click(function(){
+                    $('#main-menu').slideToggle();
+                  });
+            })
+              
+            
+        </script>
+        <div id="nav-div">
+            <div class="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>     
+            <ul id="main-menu">
+                <li><a href=""><i class="fa-solid fa-house"></i>&nbsp; Trang chủ</a></li>
+               
+               
+                <li><a href=""><i class="fa-solid fa-heart"></i>&nbsp; Yêu thích</a></li>
+               
+                <li><a href=""><i class="fa-solid fa-phone-volume"></i>&nbsp; Liên hệ</a></li>
+                
+                <li><a href=""><i class="fa-solid fa-user"></i>&nbsp; Tài khoản</a></li>
+                <li>
+                    <a href=""><i class="fa-solid fa-utensils"></i>&nbsp; Đồ ăn</a>
+                    <ul class="sub-menu">
+                      <li><a href=""><i class="fa-solid fa-bowl-food"></i>&nbsp; Cơm</a></li>
+                      
+                      <li><a href=""><i class="fa-solid fa-apple-whole"></i>&nbsp; Granola</a></li>
+                      <li><a href=""><i class="fa-solid fa-utensils"></i>&nbsp; Tráng miệng</a></li>
+                      <li><a href=""><i class="fa-solid fa-glass-water"></i>&nbsp; Nước uống</a></li>
+                    </ul>
+                  </li>
+                <li><a href=""><i class="fa-solid fa-location-dot"></i>&nbsp; Địa chỉ</a></li>
+              </ul>
+        </div>
+    </div>
+
+    <div id="wrapper-div">
+       
+        <div class="row">
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic1.avif" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Đậu hủ kho</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 58.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Đậu hủ kho </h3>
+                    <p>Món đậu hũ sốt cà chua, miếng đậu hũ mềm mịn béo thơm 
+                       hòa cùng vị chua dịu nhẹ của cà chua chắc chắn sẽ hao cơm lắm đấy!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic2.avif" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Cơm chiên sườn</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 58.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Cơm chiên sườn </h3>
+                    <p>Một đĩa cơm rang sườn nóng hổi, kết hợp cùng với rau xanh
+                       thơm nức luôn sẵn sàng cho bữa ăn của bạn.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic3.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Cơm chiên organic</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 60.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Cơm chiên organic </h3>
+                    <p>Sự kết hợp giữa cơm và các loại hạt do chính tay nhà làm tạo nên hương vị 
+                       quen thuộc, phù hợp với người ăn chay, tốt cho sức khỏe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic4.avif" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Combo gia đình</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 128.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Combo gia đình </h3>
+                    <p>Combo phù hợp với 4 người ăn bao gồm 4 phần cơm chiên các loại,
+                       2 loại nước ép tùy chọn giá ưu đãi.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="row">
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic5.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Bò wagyu áp chảo</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 999.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Bò wagyu áp chảo </h3>
+                    <p>Miếng bò sẽ tan chảy trong miệng của bạn, bạn sẽ có khoảng 500g bò
+                       được các đầu bếp tay nghề cao chế biến.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic6.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Cơm sườn organic</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 48.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Cơm sườn organic </h3>
+                    <p>Sự kết hợp giữa cơm, sườn nướng và các loại hạt do chính tay nhà làm tạo 
+                        nên hương vị quen thuộc, tốt cho sức khỏe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic7.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Granola dâu</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 36.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Granola dâu </h3>
+                    <p>Sự kệt hợp giữ sữa tươi, dâu, và các loại hạt Granola
+                        tạo nên sự hòa quyện cân bằng vị giác.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic8.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Granola mix</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 38.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Granola mix</h3>
+                    <p>Hạt Granola, chuối, xoài, thanh long, bổ sung nhiều loại dinh dưỡng
+                        đẹp da, tốt cho hệ miễn dịch.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic9.jpg" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Rau ăn kèm</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 15.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Rau ăn kèm </h3>
+                    <p>Bao gồm carot, dưa leo, mồng tơi, bông cải, các loại rau 
+                        giàu dinh dưỡng
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+               <div class="items">
+                    <img class="image" src="image/pic10.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Salad sốt mayone</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 19.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Salad sốt mayone </h3>
+                    <p>Salad kết hợp với dưa leo, carot, sốt mayone phù hợp ăn
+                        kèm với các đồ ăn khác.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="items">
+                    <img class="image" src="image/pic11.jpg" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Salab bông cải</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 25.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Salab bông cải </h3>
+                    <p>Bông cải được chế biến cùng với carot, là món ăn dinh dưỡng
+                        tốt cho mắt và ngăn ngừa bệnh về xương khớp
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic12.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Salad cà chua</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 18.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Salad cà chua </h3>
+                    <p>Bao gồm cà chua bi và các loại sald khác 
+                        vị thanh ngọt, ít chua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div class="items">
+                    <img class="image" src="image/pic13.jpg" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Nước ép kiwi</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 28.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Nước ép kiwi</h3>
+                    <p>Nước ép kiwi giúp da sáng hơn,
+                        chữa lành vết thương ngoài da,
+                        giúp tóc mọc nhanh hơn,
+                        tóc sáng bóng.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+               <div class="items">
+                    <img class="image" src="image/pic14.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Yogurt dâu</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 39.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Yogurt dâu </h3>
+                    <p>Sự kết hợp giữa 2 vị ngọt ngào của kem và một chút chua
+                        ngọt của dâu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+               <div class="items">
+                    <img class="image" src="image/pic15.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Nước ép cam/h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 28.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">>Nước ép cam</h3>
+                    <p>Tốt cho hệ miễn dịch, cải thiện làn da và giảm cân,
+                        ổn định huyết áp vằ tốt cho tim mạch.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+               <div class="items">
+                    <img class="image" src="image/pic16.png" alt="" height="70%" width="100%">
+                    <span>Xem thêm</span>
+
+                    <div class="food-name">
+                        <h3>Granola xoài</h3>
+                    </div>
+
+                    <div class="review">
+                        <img src="image/star.png" alt="star" >
+                        <span > 4.8 | 28.000 đ</span>
+                    </div>
+                </div>
+                <div class="overlay-text">
+                    <h3 class="overlay-title">Granola xoài </h3>
+                    <p>Xoài là quả quen thuộc khi kết hợp với Granola
+                        vừa dễ ăn vừa mang giá trị dinh dưỡng cao.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="boxes-div">
+            <div class="box-div" style="position: relative;">
+                <img src="/image/box1.jpeg" alt="" width="100%" height="100%">
+                <p style="position: absolute; top: 0; left: 0;">Ưu đãi</p>
+            </div>
+            <div class="box-div" style="position: relative;">
+               <img src="/image/box2.jpeg" alt=""  width="100%" height="100%">
+               <p style="position: absolute; top: 0; left: 0;">Ưu đãi</p>
+            </div>
+            <div class="box-div" style="position: relative;">
+                <img src="/image/box3.jpeg" alt="" width="100%" height="100%">
+                <p style="position: absolute; top: 0; left: 0;">Ưu đãi</p>
+            </div>
+        </div>
+
+       
+    </div>
+
+   <footer >
+        <div class="footer-row">
+            <div class="footer-heading">
+                <div class="heading1 ">
+                    <h4 style="margin-bottom: 20px; margin-top: 20px;">Theo dõi </h4>
+                    <div class="mrgbtn"><i class="fa-brands fa-facebook"></i>&nbsp; Facebook</div>
+                    <div class="mrgbtn"><i class="fa-brands fa-instagram"></i>&nbsp; Instagram</div>
+                    
+                </div>
+                <div class="heading2 ">
+                    <h4 style="margin-bottom: 20px; margin-top: 20px">Hướng dẫn</h4>
+                    <div class="mrgbtn"><a href="">Điều khoản</a></div>
+                    <div class="mrgbtn"><a href="">Hướng dẫn mua hàng</a></div>
+                    <div class="mrgbtn"><a href="">Chính sách đổi trả hàng</a></div>
+                    <div class="mrgbtn"><a href="">Điều khoản</a></div>
+                    
+                </div>
+                <div class="heading3">
+                    <h4 style="margin-bottom: 20px; margin-top: 20px">Liên hệ</h4>
+                    <div class="mrgbtn"><i class="fa-brands fa-facebook"></i>&nbsp; Facebook</div>
+                    <div class="mrgbtn"><i class="fa-brands fa-instagram"></i>&nbsp; Instagram</div>
+                    <div class="mrgbtn"><i class="fa-brands fa-linkedin"></i>&nbsp; Linkedin</div>
+                </div>
+            </div>
+        </div>
+        <div class="ifo">
+            <p>© 2024 Organic Food - Trần Thanh Phương</p>
+            <p>Mã sinh viên: DH52103494 - Lớp: D21_TH03</p>
+        </div>
+   </footer>
+
+</body>
+</html>
